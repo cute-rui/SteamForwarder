@@ -11,7 +11,7 @@ Steam Forwarder For Linux
 
 安装：
 * openssl.sh -a rsa -d steamcommunity.com 第一次必须跑一下，生成证书，然后信任ca跟中间证书，文件在certs/ca.crt和certs/steamcommunity.crt 如果想要追加域名 可以把steamcommunity.com改成 steamcommunity.com,xxxxxxx.com
-* 上面运行完之后 mv h2o /usr/local/bin/ && mv h2o.conf /etc/ && mv ca-bundle.crt  移动文件 h2o配置在/etc/h2o.conf 可以自行修改
+* forwarder.sh 移动文件 h2o配置在/etc/h2o.conf 可以自行修改
 * echo 127.0.0.1 steamcommunity.com >> /etc/hosts 解析到本地 steamcommunity.com可以换成任意域名
 * 可选命令 install forwarder.service /usr/lib/systemd/system 扔进systemd管理
 * systemctl enable forwarder && systemctl start forwarder 开机自启并启动
