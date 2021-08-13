@@ -8,7 +8,7 @@ Steam Forwarder For Linux
 如果觉得不靠谱可以自己把证书塞进去，默认目录是/usr/local/share/h2o/ca-bundle.crt 只把请求目标证书塞进去即可
 
 脚本功能：
-* openssl.sh 第一次必须跑一下，生成证书，输入密码时建议留空，因为只给自己用，避免尴尬情况（应该不会有没装openssl的情况吧...）
+* openssl.sh 第一次必须跑一下，生成证书，然后信任ca跟中间证书，文件在certs/ca.crt和certs/steamcommunity.crt
 * forwarder.sh 跑一下把文件都复制过去
 * echo 127.0.0.1 steamcommunity.com >> /etc/HOSTS 解析到本地 steamcommunity.com可以换成任意域名
 * h2o配置在/etc/h2o.conf 可以自行修改
