@@ -38,5 +38,5 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v2.2.4
         with:
-          path: ./h2o
+          path: ./h2o/build/h2o
       
