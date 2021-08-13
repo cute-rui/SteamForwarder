@@ -1,5 +1,6 @@
 # SteamForwarder
 Steam Forwarder For Linux
+
 咋用：
 * 从左边release里下压缩包，解压
 * 从论坛发的onedrive分享链接下压缩包，解压
