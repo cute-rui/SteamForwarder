@@ -35,8 +35,15 @@ jobs:
           cd build
           cmake ..
           make
-      - name: Upload
+      - name: Upload H2O BINARY
         uses: actions/upload-artifact@v2.2.4
         with:
           path: ./h2o/build/h2o
+          name: H2O_BINARY
+      - name: Upload H2O Certs
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          path: ./h2o/share/h2o/ca-bundle.crt
+          name: ca-bundle.crt
+          
       
