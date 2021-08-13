@@ -14,3 +14,5 @@ Steam Forwarder For Linux
   * write 找HOST文件，写入
 * 可选命令 install forwarder.service /usr/lib/systemd/system 扔进systemd管理
 * systemctl enable forwarder && systemctl start forwarder 开机自启并启动
+
+特别感谢简书上忘了哪位大哥的openssl脚本
