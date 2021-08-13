@@ -6,6 +6,7 @@ Steam Forwarder For Linux
 * 从论坛发的onedrive分享链接下压缩包，解压
 
 解压后得到一堆脚本文件、一个二进制文件、一个.crt H2O预制证书
+
 如果觉得不靠谱可以自己把证书塞进去，默认目录是/usr/local/share/h2o/ca-bundle.crt 只把请求目标证书塞进去即可
 
 安装：
