@@ -1,0 +1,10 @@
+[Unit]
+Description=h2o framework for steamcommunity
+    
+[Service]
+User=root
+ExecStart=/usr/local/bin/h2o -c /etc/h2o.conf
+Restart=always
+    
+[Install]
+WantedBy=multi-user.target
