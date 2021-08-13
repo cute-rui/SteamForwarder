@@ -37,10 +37,14 @@ jobs:
           make
       - name: Prepare Files
         run: |
+          git clone https://github.com/cute-rui/SteamForwarder.git
           mkdir artifacts
           cd artifacts
           mv ../h2o/build/h2o ./h2o
           mv ../h2o/share/h2o/ca-bundle.crt ./ca-bundle.crt
+          mv ../SteamForwarder/forwarder.sh ./forwarder.sh
+          mv ../SteamForwarder/openssl.sh ./openssl.sh
+          mv ../SteamForwarder/steamcommunity.service ./steamcommunity.service
       - name: Gen Package
         run: |
           tar -cvf artifacts.tar artifacts
